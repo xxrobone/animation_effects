@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #888;
+}
+
+.section {
+    position: relative;
+    background: linear-gradient(0deg, rgb(231, 231, 231), rgb(69, 69, 187));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#darkmode {
+    position: fixed;
+    top: 20vh;
+    right: 10vw;
+    
+}
+.sun {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
