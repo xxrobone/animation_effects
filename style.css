@@ -15,9 +15,24 @@ body {
     background: #888;
 }
 
+main {
+
+}
+
+.hero_bg {display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .section {
     position: relative;
-    background: linear-gradient(0deg, rgb(231, 231, 231), rgb(69, 69, 187));
+    background: linear-gradient(0deg, rgba(231, 231, 231, 0.521), rgba(69, 69, 187, 0.671));
     width: 100%;
     height: 100%;
     display: flex;
@@ -39,4 +54,21 @@ body {
     z-index: 100;
     top: 0;
     left: 0;
+}
+
+.action_btn {
+    position: fixed;
+    top: 65%;
+    left: 30%;
+    z-index: 100;
+    padding: 12px 24px;
+    background: rgb(50, 54, 53);
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.hero_bg > svg.active {
+    fill: #282828;
+    background-color: rgba(5, 5, 5, 0.856);
 }
