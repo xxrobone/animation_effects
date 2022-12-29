@@ -1,0 +1,42 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(120deg, #282828, #121212);
+}
+
+nav > ul  {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav > ul > li:last-child {
+    margin-right: 5rem;
+}
+
+nav > ul > li {
+    margin-left: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #282828;
+    transition: all 0.3s ease-in-out;
+}
+
+nav > ul > li:hover {
+    background-color: #fafafa;
+}
+
+nav > ul > li > a {
+   text-decoration: none;
+   color: #fafaea;
+}
+
+nav > ul > li:hover > a {
+   color: #121212;
+}
