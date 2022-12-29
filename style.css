@@ -74,10 +74,10 @@ header {
     top: 65%;
     left: 30%;
     z-index: 100;
-    padding: 12px 24px;
-    background: rgb(30, 189, 149);
+    padding: 3vmin 5vmin;
+    background-color: #c38d9e;
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
     border-radius: 5px;
 }
 
@@ -90,7 +90,7 @@ section {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 5rem;
+    padding: 10vmin;
     background-color: #282828;
     display: grid;
     place-content: center;
@@ -104,13 +104,13 @@ section {
 }
 
 .content p {
-    font-size: 2rem;
-    padding: 10rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    padding: 10vmin;
 }
 
 .images {
     width: 100%;
-    height: 50%;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ section {
 }
 
 img {
-    max-width: 20rem;
+    width: calc(25% - 50px);
     height: auto;
     margin: 0 1rem;
 }
