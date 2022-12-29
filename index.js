@@ -1,4 +1,6 @@
 const darkMode = document.getElementById('darkmode');
+const sun = document.querySelector('#darkmode > path');
+console.log(sun);
 
 const MoonPath =
   'M15 28C15 43.464 28 56 28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C28 0 15 12.536 15 28Z';
@@ -10,6 +12,8 @@ let toggle = false;
 
 darkMode.addEventListener('click', () => {
   console.log('clicked');
+
+  sun.style.fill = toggle ? '#EEDC7F' : '#faeaff';
 
   const timeline = anime.timeline({
     duration: 300,
