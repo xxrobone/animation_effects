@@ -48,3 +48,13 @@ svg {
     color: #fafafa;
     font-size: 2rem;
 }
+
+.zero {
+    position: absolute;
+    transform: scale(1);
+}
+
+.ze {
+    stroke: transparent;
+    transform-origin: center;
+}

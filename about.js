@@ -1,5 +1,10 @@
 const btn = document.querySelector('.btn');
 
+// to get lenght of the svg path
+var ze = document.querySelector('.ze');
+var length = ze.getTotalLength();
+console.log(length);
+
 let toggle = false;
 
 const letter1 = 'M0.5 666.5V1H435V230.5H174.5L435 666.5';
@@ -8,6 +13,8 @@ const letter2 =
 
 btn.addEventListener('click', () => {
   console.log('clicked');
+
+  ze.style.stroke = toggle ? '#28282880' : '#121212';
 
   const timeline = anime.timeline({
     duration: 300,
@@ -26,10 +33,21 @@ btn.addEventListener('click', () => {
     .add(
       {
         targets: '.section',
-        background: toggle ? 'white' : 'black',
+        backgroundColor: toggle ? 'white' : 'black',
       },
       '-=200'
-    );
+    )
+    .add({
+      targets: '.ze',
+      strokeDashoffset: toggle
+        ? [anime.setDashoffset, 0]
+        : [anime.setDashoffset, -2145],
+      easing: 'easeInOutSine',
+      duration: 2000,
+      delay: 0.1,
+      direction: 'alternate',
+      loop: false,
+    });
 
   if (!toggle) {
     toggle = true;
