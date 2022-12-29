@@ -1,3 +1,12 @@
+@import url('./nav.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -5,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .section {
@@ -19,6 +29,7 @@ body {
 svg {
    position: relative;
     stroke: white;
+    stroke-width: 5px;
 }
 
 .initials {

@@ -18,9 +18,8 @@ btn.addEventListener('click', () => {
     .add({
       targets: '.letter',
       d: [{ value: toggle ? letter1 : letter2 }],
-      strokeWidth: toggle ? '3px' : '5px',
       filter: toggle
-        ? 'drop-shadow(2px 2px 5px rgba(0,0,0,.445)'
+        ? 'drop-shadow(5px 5px 2px rgba(0,0,0,.445)'
         : 'drop-shadow(5px 5px 10px black',
       duration: 500,
     })

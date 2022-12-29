@@ -33,7 +33,7 @@ darkMode.addEventListener('click', () => {
     )
     .add(
       {
-        targets: '.section',
+        targets: '.header',
         backgroundImage: toggle
           ? 'linear-gradient(0deg, rgba(231, 231, 231, 0.521), rgba(69, 69, 187, 0.671))'
           : 'linear-gradient(0deg, rgba(0, 0, 0, 0.256), rgba(5, 5, 5, 0.856)',
