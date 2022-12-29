@@ -112,4 +112,5 @@ main section {
 img {
     max-width: 20rem;
     height: auto;
+    margin: 0 1rem;
 }
