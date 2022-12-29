@@ -72,13 +72,13 @@ btn.addEventListener('click', () => {
         : 'drop-shadow(5px 5px 10px black',
       duration: 500,
     })
-    .add(
-      {
-        targets: '.section',
-        backgroundColor: toggle ? 'white' : 'black',
-      },
-      '-=200'
-    );
+    .add({
+      targets: '.body',
+      background: toggle
+        ? 'radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(27, 26, 26, 0.774) 30%, #000 0%)'
+        : 'radial-gradient(circle, rgb(0, 0, 0) 10%, rgba(107, 107, 107, 0.589) 90%, rgba(212, 212, 212, 0.349) 100%)',
+      duration: 400,
+    });
 
   if (!toggle) {
     toggle = true;
