@@ -1,0 +1,10 @@
+.box {
+    position: relative;   
+}
+
+.box:before {
+content: '';
+position: absolute;
+inset: 0.5px;
+background: rgba(20, 20, 20, 0.875);
+}

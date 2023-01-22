@@ -1,4 +1,5 @@
-@import url('./nav.css');
+@import url('./css/nav.css');
+@import url('./css/fonts.css');
 
 * {
     margin: 0;
@@ -84,6 +85,22 @@ header {
 main {
     position: absolute;
     height: 100%;
+}
+
+#animejs {
+    color: white;
+}
+
+#animejs > a {
+    padding: 0 1rem;
+    color: rgb(64, 53, 97);
+    background-color: aquamarine;
+    transition: all 0.4s ease-in-out;
+}
+
+#animejs > a:hover {
+    color: rgb(240, 240, 242);
+    background-color: rgb(208, 151, 216);
 }
 
 section {
