@@ -1,5 +1,6 @@
 @import url('./css/nav.css');
 @import url('./css/fonts.css');
+@import url('./animations.css');
 
 * {
     margin: 0;
